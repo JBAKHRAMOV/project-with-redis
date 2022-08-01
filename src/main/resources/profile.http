@@ -1,0 +1,28 @@
+POST localhost:8080/profile_redis/
+Content-Type: application/json
+
+{
+  "name": "AKOBIR",
+  "surname": "toshmat"
+}
+
+###
+GET localhost:8080/profile_redis/8
+
+###
+GET localhost:8080/profile_redis/
+
+###
+PUT localhost:8080/profile_redis/3
+Content-Type: application/json
+
+{
+  "name": "Tosmat 5",
+  "surname": "Toshmatov 5"
+}
+
+###
+DELETE localhost:8080/profile_redis/1
+
+###
+DELETE localhost:8080/profile_redis/all
